@@ -1,5 +1,146 @@
-  #starter{
-	width:100px;
-	height:50px;
-	background: #CCCCCC;
+@font-face{
+	font-family:"gibsonLight";
+	src:url("https://www.dr.dk/assets/fonts/gibson/light/gibson-light-webfont.eot");
+	src:url("https://www.dr.dk/assets/fonts/gibson/light/gibson-light-webfont.eot?#iefix") format("embedded-opentype"),
+	url("https://www.dr.dk/assets/fonts/gibson/light/gibson-light-webfont.woff2") format("woff2"),
+	url("https://www.dr.dk/assets/fonts/gibson/light/gibson-light-webfont.woff") format("woff"),
+	url("https://www.dr.dk/assets/fonts/gibson/light/gibson-light-webfont.ttf") format("truetype"),
+	url("https://www.dr.dk/assets/fonts/gibson/light/gibson-light-webfont.svg") format("svg");
+	font-weight:normal;
+}
+@font-face{
+	font-family:"gibsonRegular";
+	src:url("https://www.dr.dk/assets/fonts/gibson/regular/gibson-regular-webfont.eot");
+	src:url("https://www.dr.dk/assets/fonts/gibson/regular/gibson-regular-webfont.eot?#iefix") format("embedded-opentype"),
+	url("https://www.dr.dk/assets/fonts/gibson/regular/gibson-regular-webfont.woff2") format("woff2"),
+	url("https://www.dr.dk/assets/fonts/gibson/regular/gibson-regular-webfont.woff") format("woff"),
+	url("https://www.dr.dk/assets/fonts/gibson/regular/gibson-regular-webfont.ttf") format("truetype"),
+	url("https://www.dr.dk/assets/fonts/gibson/regular/gibson-regular-webfont.svg") format("svg");
+	font-weight:normal;
+}
+@font-face{
+	font-family:"gibsonSemiBold";
+	src:url("https://www.dr.dk/assets/fonts/gibson/semiBold/gibson-semiBold-webfont.eot");
+	src:url("https://www.dr.dk/assets/fonts/gibson/semiBold/gibson-semiBold-webfont.eot?#iefix") format("embedded-opentype"),
+	url("https://www.dr.dk/assets/fonts/gibson/semiBold/gibson-semiBold-webfont.woff2") format("woff2"),
+	url("https://www.dr.dk/assets/fonts/gibson/semiBold/gibson-semiBold-webfont.woff") format("woff"),
+	url("https://www.dr.dk/assets/fonts/gibson/semiBold/gibson-semiBold-webfont.ttf") format("truetype"),
+	url("https://www.dr.dk/assets/fonts/gibson/semiBold/gibson-semiBold-webfont.svg") format("svg");
+	font-weight:normal
+}
+@font-face{
+	font-family:"gibsonBold";
+	src:url("https://www.dr.dk/assets/fonts/gibson/bold/gibson-bold-webfont.eot");
+	src:url("https://www.dr.dk/assets/fonts/gibson/bold/gibson-bold-webfont.eot?#iefix") format("embedded-opentype"),
+	url("https://www.dr.dk/assets/fonts/gibson/bold/gibson-bold-webfont.woff2") format("woff2"),
+	url("https://www.dr.dk/assets/fonts/gibson/bold/gibson-bold-webfont.woff") format("woff"),
+	url("https://www.dr.dk/assets/fonts/gibson/bold/gibson-bold-webfont.ttf") format("truetype"),
+	url("https://www.dr.dk/assets/fonts/gibson/bold/gibson-bold-webfont.svg") format("svg");
+	font-weight:normal;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.hash-component-inner-wrapper {
+	position: relative;
+}
+.hash-component-inner-wrapper h2 {
+	font-size: 60px;
+	font-family: gibsonBold;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 0px;
+	position: absolute;
+	top: -30px;
+	left: 0;
+	right: 0;
+	color: inherit;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+ .hash-component-inner-wrapper h2.intersecting {
+	opacity: 1;
+}
+.hash-component-inner-wrapper {
+	color: #5dce38;
+}
+
+/* BOXES */
+.hash-component-outer-wrapper {
+	padding: 5vw;
+	background-size: cover;
+
+}
+.hash-component-inner-wrapper {
+	padding: 20px;
+	min-height: 25vw;
+}
+
+.hash-component-inner-wrapper img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+/* LETTER ANIMATION */
+
+
+
+.intersecting .letter-animated {
+	animation-name: blur;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	filter: blur(0.5px);
+}
+
+
+.letter-animated.letter-whitespace {
+	width: 20px;
+}
+
+.letter-animated.letter-cycle-0 {
+
+
+}
+
+.letter-animated.letter-cycle-1 {
+
+	animation-delay: 0.5s;
+}
+.letter-animated.letter-cycle-2 {
+
+	animation-delay: 1.5;
+}
+
+.letter-animated.letter-cycle-3 {
+
+	animation-delay: 2.5s;
+}
+.letter-animated.letter-cycle-4 {
+
+	animation-delay: 3.5s;
+}
+
+@keyframes blur {
+	0% {
+
+		filter: blur(1px);
+   }
+
+	100% {
+
+		filter: blur(3px);
+
+
+	}
+
+
 }
