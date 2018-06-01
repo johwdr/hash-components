@@ -4,6 +4,7 @@ require('intersection-observer');
 import AnimatedTypography from './components/animated-typography/animated-typography';
 import HashComponent from './components/hash-component/hash-component';
 import IntersectionClass from './components/intersection-class/intersection-class';
+import Parallax from './components/parallax/parallax';
 
 
 
@@ -26,7 +27,8 @@ class Weedipedia {
 
         }
 
-        new IntersectionClass('[data-hash-component]');
+        this.intersector = new IntersectionClass('[data-hash-component]');
+        new  Parallax(this.intersector);
     }
 
 }

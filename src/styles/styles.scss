@@ -60,7 +60,7 @@ body {
 	right: 0;
 	color: inherit;
 	opacity: 0;
-	transition: opacity 1.5s;
+	transition: opacity 1.5s, transform 0.3s;
 }
 
  .hash-component-inner-wrapper h2.intersecting {

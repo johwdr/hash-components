@@ -8,7 +8,7 @@ export default class IntersectionClass {
     constructor(selector) {
 
         this.els = document.querySelectorAll(selector + ' h2')
-
+        this.intersectingEls = [];
         var options = {
             root: null,
             rootMargin: '0px',
@@ -32,8 +32,14 @@ export default class IntersectionClass {
             const entry = entries[n];
             if (entry.isIntersecting) {
                 entry.target.classList.add('intersecting')
+                this.intersectingEls.push(entry.target)
             } else {
                 entry.target.classList.remove('intersecting')
+                const index = this.intersectingEls.indexOf(entry.target);
+                if (index > -1) {
+                    this.intersectingEls.splice(index, 1);
+                }
+
             }
         }
 
