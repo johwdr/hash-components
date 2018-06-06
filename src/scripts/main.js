@@ -11,6 +11,7 @@ import HashComponent from './components/hash-component/hash-component';
 import IntersectionClass from './components/intersection-class/intersection-class';
 import Parallax from './components/parallax/parallax';
 import SurveySlider from './components/survey-slider/survey-slider';
+import QuestionBool from './components/question-bool/question-bool';
 
 
 
@@ -26,6 +27,7 @@ class Weedipedia {
         this.els = document.querySelectorAll('[data-hash-component]');
         this.components = [];
         this.videos = [];
+        this.questionBools = [];
 
 
         for(let n=0; n<this.els.length; n++) {
@@ -46,6 +48,14 @@ class Weedipedia {
 
         }
         const slider = new SurveySlider();
+
+        this.boolEls = document.querySelectorAll('[data-question-bool]');
+        for(let n=0; n<this.boolEls.length; n++) {
+
+            const component = new QuestionBool(this.boolEls[n]);
+            this.questionBools.push(component);
+
+        }
     }
 
 }

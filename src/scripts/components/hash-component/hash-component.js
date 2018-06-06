@@ -26,7 +26,12 @@ export default class HashComponent {
         this.innerWrapper = document.createElement('div');
         this.innerWrapper.classList.add('hash-component-inner-wrapper')
         this.innerWrapper.style.backgroundColor = this.config.innerBg || null;
+        this.innerWrapper.style.backgroundImage = this.config.innerBgFile ? "url('" + this.config.innerBgFile + "')" : null;
         this.innerWrapper.style.color = this.config.headerColor || null;
+
+
+
+
 
         this.componentEl.appendChild(this.outerWrapper);
         this.outerWrapper.appendChild(this.innerWrapper);
