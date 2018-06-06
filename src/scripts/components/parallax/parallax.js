@@ -11,9 +11,7 @@ export default class Parallax {
                 const top = el.getBoundingClientRect().top;
 
                 //const factor = Math.round(window.innerHeight/ top)
-                const factor = Math.round(top *0.15)
-
-                console.log(factor)
+                const factor = Math.round(top *0.12)
                 if (factor > 0 && factor < 200) {
                     window.requestAnimationFrame(() => {
                         el.style.transform = 'translateY(' + factor +'px)';

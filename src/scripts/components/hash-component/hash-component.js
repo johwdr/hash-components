@@ -8,8 +8,6 @@ import {create, select, fetchFile} from '../../utils/trix-utils';
 export default class HashComponent {
     constructor(el) {
 
-        console.log(el);
-
         this.config = el.dataset;
         this.componentEl = el;
         this.contents = el.innerHTML;

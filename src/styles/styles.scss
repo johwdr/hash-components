@@ -61,6 +61,7 @@ body {
 	color: inherit;
 	opacity: 0;
 	transition: opacity 1.5s, transform 0.3s;
+	z-index: 50;
 }
 
  .hash-component-inner-wrapper h2.intersecting {
@@ -83,15 +84,40 @@ body {
 .hash-component-inner-wrapper img {
 	width: 100%;
 	height: auto;
+	vertical-align:top;
 }
 
+/* VIDEO */
+[data-hash-video] {
+	position: relative;
+}
+[data-hash-video] .video-component-button {
+	width: 40px;
+	height: 40px;
+	background: #f0f;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 40;
 
+}
+[data-hash-video] video {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+.video-component-button-playing {
+	display: none;
+}
 
 /* LETTER ANIMATION */
 
 
 
-.intersecting .letter-animated {
+.intersecting.text-animation {
 	animation-name: blur;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
@@ -101,29 +127,23 @@ body {
 }
 
 
-.letter-animated.letter-whitespace {
-	width: 20px;
-}
-
-.letter-animated.letter-cycle-0 {
 
 
-}
 
-.letter-animated.letter-cycle-1 {
+.text-animation.text-cycle-1 {
 
 	animation-delay: 0.5s;
 }
-.letter-animated.letter-cycle-2 {
+.text-animation.text-cycle-2 {
 
 	animation-delay: 1.5;
 }
 
-.letter-animated.letter-cycle-3 {
+.text-animation.text-cycle-3 {
 
 	animation-delay: 2.5s;
 }
-.letter-animated.letter-cycle-4 {
+.text-animation.text-cycle-4 {
 
 	animation-delay: 3.5s;
 }
