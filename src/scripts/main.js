@@ -1,4 +1,8 @@
+require('../styles/nouislider.scss');
+require('../styles/slider.scss');
+
 require('../styles/styles.scss');
+
 require('intersection-observer');
 
 import AnimatedTypography from './components/animated-typography/animated-typography';
@@ -6,6 +10,7 @@ import Video from './components/video/video';
 import HashComponent from './components/hash-component/hash-component';
 import IntersectionClass from './components/intersection-class/intersection-class';
 import Parallax from './components/parallax/parallax';
+import SurveySlider from './components/survey-slider/survey-slider';
 
 
 
@@ -40,6 +45,7 @@ class Weedipedia {
             this.videos.push(component);
 
         }
+        const slider = new SurveySlider();
     }
 
 }

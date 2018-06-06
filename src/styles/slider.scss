@@ -1,0 +1,295 @@
+  $interfaceColor:#999999;
+  $buttonColor: #488429;
+  $buttonBorderColor:rgba(158, 158, 158, 0.9);
+
+
+
+  [data-survey-slider] {
+    margin: 0px auto;
+
+    background: rgb(255, 255, 255);
+
+    text-align: center;
+    color: rgb(0, 0, 0);
+    line-height: normal;
+
+    .red-header{
+      color:red;
+    }
+
+    .dr-survey-inner-container {
+      background: #5dce38;
+      margin: 0 auto;
+      min-height: 300px;
+      padding: 10px 0px 5px 0px;
+      @media only screen and (min-width: 768px){
+        padding: 20px 0px 20px 0px;
+      }
+    }
+    .dr-survey-question-container {
+      font-size: 30px;
+      line-height:1.2em;
+      font-family:"gibsonSemiBold";
+      @media only screen and (min-width: 768px){
+        font-size: 40px;
+      }
+      .dr-survey-question-subheader{
+        color:#4d4d4d;
+        margin-bottom:15px;
+        display:block;
+        font-family:"gibsonRegular";
+        font-size:18px;
+        line-height: 26px;
+        @media only screen and (min-width: 768px){
+          font-size:20px;
+          line-height: 24px;
+        }
+      }
+    }
+    .dr-survey-image-container{
+      position:relative;
+      top:0px;
+      margin:0 0 0 0;
+      img{
+        width:100%;
+      }
+      @media only screen and (min-width: 768px){
+        top:0px;
+      }
+
+    }
+    .dr-survey-slider-minmark {
+      color: $interfaceColor;
+      position: absolute;
+      top: -18px;
+      left: 0px;
+      font-family: gibsonSemiBold;
+      color: #fff;
+      font-style: italic;
+      font-size: 26px;
+    }
+    .dr-survey-slider-maxmark {
+      color: $interfaceColor;
+      position: absolute;
+      top: -18px;
+      right: 0px;
+      font-family: gibsonSemiBold;
+      color: #fff;
+      font-style: italic;
+      font-size: 26px;
+    }
+    @media screen AND (min-width: 768px) {
+      .dr-survey-slider-minmark {
+        top: 16px;
+        left: -90px;
+        font-size: 32px;
+      }
+      .dr-survey-slider-maxmark {
+        top: 16px;
+        right: -90px;
+        font-size: 32px;
+      }
+
+    }
+
+
+    .noUi-target {
+      background: none;
+      box-shadow: none;
+      border: none;
+    }
+    .noUi-horizontal {
+      height: 40px;
+      margin: 20px 20px 0px;
+      //padding: 40px 0;
+      &:after {
+        top: -20px;
+        position: relative;
+        content: '';
+        display: block;
+        background: #fff;
+        width: 100%;
+        height: 25px;
+        border-radius: 0px;
+        // box-shadow: 0px 0px 1px 2px #666;
+      }
+    }
+    @media screen AND (min-width: 768px) {
+      .noUi-horizontal {
+        margin: 0 100px;
+      }
+    }
+    .noUi-horizontal .noUi-handle {
+      top: 14px;
+    }
+    .noUi-handle {
+      border-radius: 0;
+      width: 35px;
+      height: 35px;
+      left:-14px;
+      //bottom: -4px;
+      //background: url('../assets/images/dot-no-glow.svg');
+      background-size: 28px 28px;
+      border: $buttonColor solid 4px;
+      background: $buttonColor;
+      box-shadow: none;
+
+      &:before, &:after {
+        display: none;
+      }
+    }
+
+    [disabled].noUi-target {
+
+      .noUi-handle {
+        background: #345b1d;
+        border: #345b1d solid 4px;
+        animation-name: none;
+        box-shadow: none;
+        &:before, &:after {
+          display: none;
+        }
+      }
+      .noUi-origin.guess .noUi-handle {
+        background: $buttonColor;
+        border: $buttonColor solid 4px;
+      }
+    }
+
+    [disabled].noUi-target, [disabled].noUi-handle, [disabled] .noUi-handle {
+      cursor: default;
+    }
+
+    .dr-survey-value-container {
+      position: relative;
+      background: none;
+      padding: 5px 0px 0px 0px;
+      margin: 0px 30px;
+
+      color: $buttonColor;
+      text-align: center;
+      width: auto;
+      min-height: 20px;
+      white-space: nowrap;
+      .result-answer {
+        color: #345b1d;
+        opacity:0;
+        position: absolute;
+        top:12px;
+        font-family: gibsonBold;
+        font-style: italic;
+      }
+      .result-guess {
+        position: absolute;
+        left:50%;
+        opacity: 0;
+        transform:translateX(-50%);
+        color: $buttonColor;
+        top: 100px;
+        font-family: gibsonBold;
+        font-style: italic;
+      }
+      @media screen AND (min-width: 768px) {
+        margin: 0 100px;
+        .result-guess {
+          top: 80px;
+        }
+      }
+
+
+    }
+
+    .dr-survey-answer-track {
+      background: #f0f;
+      width: 10px;
+      height: 25px;
+      position: absolute;
+      z-index: 3;
+      top: 20px;
+    }
+    .dr-survey-value-container.non-initialized {
+      visibility: hidden;
+    }
+    .result-guess, .result-answer {
+      font-size: 17px;
+    }
+    .dr-survey-feedback-wrapper{
+      //position:relative;
+      height:36px;
+      visibility: hidden;
+      opacity:0;
+      margin:-106px auto 0 auto;
+      // overflow: hidden;
+      max-width: 600px;
+      padding: 0 20px;
+    }
+    .dr-survey-slider-feedback{
+      color:#fff;
+      margin:10px auto 20px auto;
+      font-size:18px;
+      line-height: 1.2;
+      text-align: left;
+      padding-bottom: 10px;
+      @media only screen and (min-width: 768px){
+        font-size:20px;
+        line-height: 28px;
+      }
+
+      //position: absolute;
+    }
+    .dr-survey-submit-button {
+      height: auto;
+      width: auto;
+      color: rgb(255, 255, 255);
+      font-size: 40px;
+      line-height: 1;
+      text-transform: uppercase;
+      background: transparent;
+      border: none;
+      position: relative;
+      z-index: 5;
+      outline: none;
+      margin: 60px auto 10px;
+      display: block;
+      //padding: 0px 16px 36px;
+      // font-family: gibsonBold;
+      // border-radius: 24px;
+      // box-shadow: 0 3px 2px 0px #000;
+      font-family:"gibsonBold";
+      font-style: italic;
+      cursor: pointer;
+      &:after {
+        content: '';
+        width: 100%;
+        border: 10px solid #488429;
+        height: 20px;
+        background: #488429;
+        display: block;
+        position: relative;
+        z-index: -1;
+        top: -20px;
+        left: -10px;
+      }
+    }
+    .fadable{
+      transition:background 600ms ease-in-out, border-color 600ms ease-in-out, color 600ms ease-in-out;
+    }
+    .dr-survey-submit-button.disabled{
+      //visibility: hidden
+      //cursor: not-allowed;
+      display: none;
+    }
+    .dr-survey-submit-button.removed {
+      display: none;
+    }
+    .dr-survey-source-element {
+      //position: absolute;
+      color:#fff;
+      text-align: center;
+      margin: 10px auto;
+      font-size: 15px;
+      .source{
+        font-family: gibsonBold;
+      }
+    }
+  }
