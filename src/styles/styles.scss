@@ -41,7 +41,7 @@
 
 body {
 	margin: 0px;
-	padding: 0px;
+	padding: 0px 0px 400px;
 }
 
 .hash-component-inner-wrapper {
@@ -50,6 +50,7 @@ body {
 .hash-component-inner-wrapper h2 {
 	font-size: 5.5vw;
 	font-family: gibsonBold;
+	font-style: italic;
 	font-weight: 100;
 	text-transform: uppercase;
 	text-align: center;
@@ -140,6 +141,19 @@ body {
 [data-question-bool-answer] {
 	display: none;
 	padding-top: 10px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	p {
+		font-family: gibsonRegular;
+		font-size: 16px;
+	}
+	h3 {
+		font-family: gibsonBold;
+		font-style: italic;
+		text-transform: uppercase;
+		font-size: 26px;
+	}
 }
 [data-question-bool-answer].shown {
 	display: block;
@@ -179,6 +193,18 @@ body {
 	}
   }
 
+/* PIE */
+[data-hash-pie] svg {
+	width: 120px;
+	height: 120px;
+}
+
+/* SLIDER */
+
+.dr-survey-slider-feedback {
+	font-family: gibsonRegular;
+	font-size: 16px;
+}
 
 
 .text-animation.text-cycle-1 {

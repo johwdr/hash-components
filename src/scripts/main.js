@@ -12,6 +12,7 @@ import IntersectionClass from './components/intersection-class/intersection-clas
 import Parallax from './components/parallax/parallax';
 import SurveySlider from './components/survey-slider/survey-slider';
 import QuestionBool from './components/question-bool/question-bool';
+import SimplePie from './components/simple-pie/simple-pie';
 
 
 
@@ -54,6 +55,17 @@ class Weedipedia {
 
             const component = new QuestionBool(this.boolEls[n]);
             this.questionBools.push(component);
+
+        }
+        this.pies = [];
+        this.pieEls = document.querySelectorAll('[data-hash-pie]');
+        for(let n=0; n<this.pieEls.length; n++) {
+            const settings = [
+                { percent: 0.45, color: '#5dce38' },
+                { percent: 0.55, color: '#488429' },
+              ];
+            const component = new SimplePie(this.pieEls[n], settings);
+            this.pies.push(component);
 
         }
     }
