@@ -38,6 +38,13 @@ class Weedipedia {
         }
 
         this.intersector = new IntersectionClass('[data-hash-component]');
+
+        this.headLines = document.querySelectorAll('[data-hash-component] h2');
+        for (let n=0; n < this.headLines.length;  n++) {
+            const headline =  this.headLines[n];
+            headline.style.transform = 'translateY(10vw)';
+        }
+
         new  Parallax(this.intersector);
 
 

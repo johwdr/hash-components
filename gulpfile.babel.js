@@ -105,6 +105,8 @@ gulp.task('dist:clean', () =>{
 })
 
 gulp.task('index:dist', ['webpack:dist'], function () {
+  var frame = gulp.src('src/frame.html');
+    frame.pipe(gulp.dest('dist'));
   var target = gulp.src('src/index.html');
   var sources = gulp.src(['**/*.js'], {read: false, cwd: __dirname + '/dist'});
   return target.pipe(inject(sources, {addRootSlash:false}))
