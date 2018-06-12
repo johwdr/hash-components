@@ -8,7 +8,7 @@ export default class Parallax {
         setInterval(() => {
             for (let n=0; n<intersections.intersectingEls.length;n++){
                 const el = intersections.intersectingEls[n];
-                const top = el.getBoundingClientRect().top - (window.innerWidth * 0.05);;
+                const top = el.getBoundingClientRect().top - (window.innerWidth * 0.15);;
 
                 //const factor = Math.round(window.innerHeight/ top)
                 const factor = Math.round((top *0.02));
