@@ -7,7 +7,6 @@
   [data-survey-slider] {
     margin: 0px auto;
 
-    background: rgb(255, 255, 255);
 
     text-align: center;
     color: rgb(0, 0, 0);
@@ -18,12 +17,12 @@
     }
 
     .dr-survey-inner-container {
-      background: #5dce38;
+
       margin: 0 auto;
       min-height: 300px;
       padding: 10px 0px 5px 0px;
       @media only screen and (min-width: 768px){
-        padding: 20px 0px 20px 0px;
+        padding: 8vw 0px 20px 0px;
       }
     }
     .dr-survey-question-container {
@@ -64,7 +63,7 @@
       top: -18px;
       left: 0px;
       font-family: gibsonSemiBold;
-      color: #fff;
+      color: #5dce38;
       font-style: italic;
       font-size: 26px;
     }
@@ -74,7 +73,7 @@
       top: -18px;
       right: 0px;
       font-family: gibsonSemiBold;
-      color: #fff;
+      color: #5dce38;
       font-style: italic;
       font-size: 26px;
     }
@@ -107,7 +106,7 @@
         position: relative;
         content: '';
         display: block;
-        background: #fff;
+        background: #5dce38;
         width: 100%;
         height: 25px;
         border-radius: 0px;
@@ -130,9 +129,10 @@
       //bottom: -4px;
       //background: url('../assets/images/dot-no-glow.svg');
       background-size: 28px 28px;
-      border: $buttonColor solid 4px;
-      background: $buttonColor;
+      border: #fff solid 4px;
+      background: #fff;
       box-shadow: none;
+      outline: none;
 
       &:before, &:after {
         display: none;
@@ -151,8 +151,8 @@
         }
       }
       .noUi-origin.guess .noUi-handle {
-        background: $buttonColor;
-        border: $buttonColor solid 4px;
+        background: #fff;
+        border: #fff solid 4px;
       }
     }
 
@@ -184,7 +184,7 @@
         left:50%;
         opacity: 0;
         transform:translateX(-50%);
-        color: $buttonColor;
+        color: #fff;
         top: 100px;
         font-family: gibsonBold;
         font-style: italic;
@@ -200,7 +200,7 @@
     }
 
     .dr-survey-answer-track {
-      background: #f0f;
+      //background: #f0f;
       width: 10px;
       height: 25px;
       position: absolute;
@@ -260,10 +260,10 @@
       cursor: pointer;
       &:after {
         content: '';
-        width: 100%;
-        border: 10px solid #488429;
-        height: 20px;
-        background: #488429;
+        width: calc(100% + 20px);
+        border: 10px solid #5dce38;
+        height: 25px;
+        background: #5dce38;
         display: block;
         position: relative;
         z-index: -1;

@@ -65,6 +65,10 @@ body {
 	z-index: 50;
 	line-height: 0.9;
 }
+.hash-component-inner-wrapper h2.small {
+	font-size: 4.5vw;
+	top: -3.25vw;
+}
 
  .hash-component-inner-wrapper h2.intersecting {
 	opacity: 1;
@@ -149,12 +153,15 @@ body {
 	p {
 		font-family: gibsonRegular;
 		font-size: 16px;
+		color: inherit;
 	}
 	h3 {
+		color: inherit;
 		font-family: gibsonBold;
 		font-style: italic;
 		text-transform: uppercase;
 		font-size: 26px;
+		line-height: 1.2;
 	}
 }
 [data-question-bool-answer].shown {
@@ -183,10 +190,10 @@ body {
 	cursor: pointer;
 	&:after {
 	  content: '';
-	  width: 100%;
-	  border: 10px solid #488429;
-	  height: 20px;
-	  background: #488429;
+	  width: calc(100% + 20px);
+	  border: 10px solid #5dce38;
+	  height: 25px;
+	  background: #5dce38;
 	  display: block;
 	  position: relative;
 	  z-index: -1;
