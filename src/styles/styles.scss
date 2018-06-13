@@ -124,6 +124,26 @@ body {
 	padding-bottom: 5vw;
 	.hash-component-section {
 		color: #fff;
+
+	}
+}
+.hash-component-section-wrapper {
+	padding-top: 10vw;
+}
+.hash-typology {
+	.hash-component-section {
+		width: 100%;
+		padding: 10px;
+		max-width: 400px;
+		position: relative;
+		z-index: 10;
+		img {
+			max-width: 200px;
+			width: 100%;
+			position: absolute;
+			z-index: -1;
+			right: 100%;
+		}
 		h4, h5 {
 			font-size: calc(10px + 2.5vw);
 			font-family: gibsonBold;
@@ -142,22 +162,34 @@ body {
 			font-family: gibsonRegular;
 		}
 	}
+	.hash-component-section.hash-component-section-left {
+		img {
+			left: 100%;
+		}
+	}
 }
-.hash-component-section {
-	width: 100%;
-	padding: 10px;
-	max-width: 400px;
-	img {
-		max-width: 200px;
-		width: 100%;
+
+.hash-production-countries {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	.hash-component-section {
+		text-align: center;
+		margin: 0 auto;
+		max-width: 600px;
 	}
 }
 .hash-component-section.hash-component-section-left {
-	align-self: flex-start;
+	align-self: center;
 	text-align: right;
+	position: relative;
+	right: 16%;
 }
 .hash-component-section.hash-component-section-right {
-	align-self: flex-end;
+	align-self: center;
+	position: relative;
+	left: 16%;
 }
 
 /* VIDEO */
