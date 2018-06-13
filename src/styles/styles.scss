@@ -46,9 +46,10 @@ body {
 
 .hash-component-inner-wrapper {
 	position: relative;
+	background-size: cover;
 }
 .hash-component-inner-wrapper h2 {
-	font-size: 5.5vw;
+	font-size: calc(10px + 5.5vw);
 	font-family: gibsonBold;
 	font-style: italic;
 	font-weight: 100;
@@ -56,7 +57,7 @@ body {
 	text-align: center;
 	margin-top: 0px;
 	position: absolute;
-	top: -2.75vw;
+	top: calc(-2.75vw - 10px);
 	left: 0;
 	right: 0;
 	color: inherit;
@@ -66,8 +67,8 @@ body {
 	line-height: 0.9;
 }
 .hash-component-inner-wrapper h2.small {
-	font-size: 4.5vw;
-	top: -3.25vw;
+	font-size: calc(10px + 4.5vw);
+	top: calc(-3.25vw - 10px);
 }
 
  .hash-component-inner-wrapper h2.intersecting {
@@ -92,6 +93,69 @@ body {
 	width: 100%;
 	height: auto;
 	vertical-align:top;
+}
+.flex-component .hash-component-outer-wrapper .hash-component-inner-wrapper {
+	display: flex;
+}
+.flex-component-wrapper {
+	padding: 5vw;
+	p, a {
+		font-family: gibsonRegular;
+		color: inherit;
+	}
+}
+.survey-wrapper {
+	padding-top: 10vw;
+	p {
+		text-align: center;
+		color: inherit;
+		max-width: 800px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0 10px;
+		font-family: gibsonRegular;
+		font-size: calc(10px + 1vw);
+	}
+}
+.hash-typology {
+	display: flex;
+	flex-direction: column;
+	padding-top: 10vw;
+	.hash-component-section {
+		color: #fff;
+		h4, h5 {
+			font-size: calc(10px + 2.5vw);
+			font-family: gibsonBold;
+			font-style: italic;
+			font-weight: 100;
+			text-transform: uppercase;
+			color: #fff;
+			line-height: 1.1;
+		}
+		h5 {
+			font-size: calc(10px + 1.5vw);
+			color: #53ad31;
+		}
+		p {
+			color: #fff;
+		}
+	}
+}
+.hash-component-section {
+	width: 100%;
+	padding: 10px;
+	max-width: 400px;
+	img {
+		max-width: 200px;
+		width: 100%;
+	}
+}
+.hash-component-section.hash-component-section-left {
+	align-self: flex-start;
+	text-align: right;
+}
+.hash-component-section.hash-component-section-right {
+	align-self: flex-end;
 }
 
 /* VIDEO */
@@ -146,7 +210,7 @@ body {
 }
 [data-question-bool-answer] {
 	display: none;
-	padding-top: 10px;
+	padding-top: 7vw;
 	max-width: 600px;
 	margin: 0 auto;
 	padding-bottom: 40px;
