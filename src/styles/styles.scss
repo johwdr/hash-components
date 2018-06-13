@@ -130,6 +130,12 @@ body {
 .hash-component-section-wrapper {
 	padding-top: 10vw;
 }
+.hash-production-countries, .hash-production-price {
+	.hash-component-section p {
+		color: #fff;
+		font-family: gibsonRegular;
+	}
+}
 .hash-typology {
 	.hash-component-section {
 		width: 100%;
