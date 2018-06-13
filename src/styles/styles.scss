@@ -121,6 +121,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding-top: 10vw;
+	padding-bottom: 5vw;
 	.hash-component-section {
 		color: #fff;
 		h4, h5 {
@@ -138,6 +139,7 @@ body {
 		}
 		p {
 			color: #fff;
+			font-family: gibsonRegular;
 		}
 	}
 }
