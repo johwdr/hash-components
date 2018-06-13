@@ -136,6 +136,10 @@ body {
 		font-family: gibsonRegular;
 	}
 }
+.hash-production-price .hash-component-section p {
+	text-align: center;
+}
+
 .hash-typology {
 	.hash-component-section {
 		width: 100%;
@@ -143,13 +147,7 @@ body {
 		max-width: 400px;
 		position: relative;
 		z-index: 10;
-		img {
-			max-width: 200px;
-			width: 100%;
-			position: absolute;
-			z-index: -1;
-			right: 100%;
-		}
+
 		h4, h5 {
 			font-size: calc(10px + 2.5vw);
 			font-family: gibsonBold;
@@ -186,16 +184,36 @@ body {
 		max-width: 600px;
 	}
 }
-.hash-component-section.hash-component-section-left {
-	align-self: center;
-	text-align: right;
-	position: relative;
-	right: 16%;
+.hash-typology, .hash-earnings {
+	.hash-component-section {
+		margin: 0 auto;
+		text-align: center;
+	}
 }
-.hash-component-section.hash-component-section-right {
-	align-self: center;
-	position: relative;
-	left: 16%;
+
+@media (min-width: 830px) {
+	.hash-component-section.hash-component-section-left {
+		align-self: center;
+		text-align: right;
+		position: relative;
+		right: 170px;
+	}
+	.hash-component-section.hash-component-section-right {
+		align-self: center;
+		position: relative;
+		left: 170px;
+	}
+	.hash-typology {
+		.hash-component-section {
+			img {
+				max-width: 200px;
+				width: 100%;
+				position: absolute;
+				z-index: -1;
+				right: 100%;
+			}
+		}
+	}
 }
 
 /* VIDEO */
