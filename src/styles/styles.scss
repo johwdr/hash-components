@@ -202,7 +202,8 @@ body {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: 10vw;
+    padding: 10px;
 	.hash-component-section {
 		text-align: center;
 		margin: 0 auto;
@@ -214,6 +215,10 @@ body {
 		margin: 0 auto;
 		text-align: center;
 	}
+}
+
+.hash-earnings .hash-component-section img {
+	width: auto;
 }
 p.disclaimer {
 	padding: 20px 10px 40px;
