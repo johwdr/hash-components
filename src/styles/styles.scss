@@ -140,7 +140,7 @@ body {
 	text-align: center;
 }
 
-.hash-typology {
+.hash-typology, .hash-earnings {
 	.hash-component-section {
 		width: 100%;
 		padding: 10px;
@@ -172,7 +172,9 @@ body {
 		}
 	}
 }
-
+.hash-earnings .hash-component-section h5 {
+	color: #000;
+}
 .hash-production-countries {
 	position: absolute;
 	left: 0;
@@ -189,6 +191,13 @@ body {
 		margin: 0 auto;
 		text-align: center;
 	}
+}
+p.disclaimer {
+	padding: 10px;
+	max-width: 600px;
+	font-size: calc(10px + 1vw);
+	font-family: gibsonLight;
+	font-style: italic;
 }
 
 @media (min-width: 830px) {
