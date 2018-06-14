@@ -246,7 +246,7 @@ p.disclaimer {
 	.country-wrapper {
 		margin: 8px auto 20px;
 		display: flex;
-		max-width: 600px;
+		max-width: 45vw;
 		h5 {
 			margin-top: 0px;
 		}
@@ -255,6 +255,7 @@ p.disclaimer {
 			font-family: gibsonRegular;
 			text-align: left;
 			padding-top: 8px;
+			padding-left: 8px;
 		}
 	}
 	.notes {
