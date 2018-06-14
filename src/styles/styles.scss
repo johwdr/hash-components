@@ -105,7 +105,7 @@ body {
 	}
 }
 .survey-wrapper {
-	padding-top: 10vw;
+	padding-top: 15vw;
 	p {
 		text-align: center;
 		color: inherit;
@@ -117,16 +117,19 @@ body {
 		font-size: calc(10px + 1vw);
 	}
 }
-[data-survey-slider] .survey-wrapper.survey-label-above {
-	.dr-survey-slider-minmark {
-		top: 16px;
-		left: -90px;
-		font-size: 32px;
-	}
-	.dr-survey-slider-maxmark {
-		top: 16px;
-		right: -90px;
-		font-size: 32px;
+.survey-wrapper.survey-label-above {
+	//padding-top: 15vw;
+	[data-survey-slider]  {
+		.dr-survey-slider-minmark {
+			position: absolute;
+			top: -18px;
+			left: 0px;
+		}
+		.dr-survey-slider-maxmark {
+			position: absolute;
+			top: -18px;
+			right: 0px;
+		}
 	}
 }
 
