@@ -220,6 +220,38 @@ p.disclaimer {
 	line-height: 1.1;
 }
 
+.allowed-countries {
+	text-align: center;
+	padding-top: 10vw;
+	padding-bottom: 40px;
+	h5 {
+		color: #fff;
+		font-size: calc(10px + 5.5vw);
+		font-family: gibsonBold;
+		font-style: italic;
+		line-height: 1;
+	}
+	.country-wrapper {
+		margin: 8px auto 20px;
+		display: flex;
+		max-width: 600px;
+		h5 {
+			margin-top: 0px;
+		}
+		p {
+			color: #fff;
+			font-family: gibsonRegular;
+			text-align: left;
+			padding-top: 8px;
+		}
+	}
+	.notes {
+		color: #fff;
+		font-size: 14px;
+		font-family: gibsonLight;
+	}
+}
+
 @media (min-width: 830px) {
 	.hash-component-section.hash-component-section-left {
 		align-self: center;
