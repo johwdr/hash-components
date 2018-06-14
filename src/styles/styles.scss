@@ -117,6 +117,19 @@ body {
 		font-size: calc(10px + 1vw);
 	}
 }
+[data-survey-slider] .survey-wrapper.survey-label-above {
+	.dr-survey-slider-minmark {
+		top: 16px;
+		left: -90px;
+		font-size: 32px;
+	}
+	.dr-survey-slider-maxmark {
+		top: 16px;
+		right: -90px;
+		font-size: 32px;
+	}
+}
+
 .hash-typology {
 	display: flex;
 	flex-direction: column;
@@ -193,11 +206,15 @@ body {
 	}
 }
 p.disclaimer {
-	padding: 10px;
+	padding: 20px 10px 40px;
 	max-width: 600px;
-	font-size: calc(10px + 1vw);
+	font-size: 14px;
 	font-family: gibsonLight;
 	font-style: italic;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto 0px;
+	line-height: 1.1;
 }
 
 @media (min-width: 830px) {
@@ -281,6 +298,8 @@ p.disclaimer {
 	max-width: 600px;
 	margin: 0 auto;
 	padding-bottom: 40px;
+	padding-left: 20px;
+    padding-right: 20px;
 	p {
 		font-family: gibsonRegular;
 		font-size: 16px;
@@ -344,6 +363,7 @@ p.disclaimer {
 .dr-survey-slider-feedback {
 	font-family: gibsonRegular;
 	font-size: 16px;
+	text-align: center;
 }
 
 

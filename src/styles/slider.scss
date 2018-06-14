@@ -214,14 +214,12 @@
       font-size: 17px;
     }
     .dr-survey-feedback-wrapper{
-      //position:relative;
       height:36px;
       visibility: hidden;
       opacity:0;
       margin:-106px auto 0 auto;
-      // overflow: hidden;
       max-width: 600px;
-      padding: 0 20px;
+      padding: 20px;
     }
     .dr-survey-slider-feedback{
       color:#fff;
@@ -234,8 +232,6 @@
         font-size:20px;
         line-height: 28px;
       }
-
-      //position: absolute;
     }
     .dr-survey-submit-button {
       height: auto;
