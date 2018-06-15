@@ -94,6 +94,9 @@ body {
 .hash-component-inner-wrapper {
 	min-height: 25vw;
 }
+.hash-credits .hash-component-inner-wrapper {
+	min-height: auto;
+}
 
 .hash-component-inner-wrapper img {
 	width: 100%;
@@ -152,21 +155,35 @@ body {
 .hash-component-section-wrapper {
 	padding-top: 10vw;
 }
-.hash-psycological-issues, .hash-production-countries, .hash-production-price {
+.hash-psycological-issues, .hash-production-countries, .hash-production-price, .hash-psycological-issues {
 	.hash-component-section p {
 		color: #fff;
 		font-family: gibsonRegular;
 	}
 }
-.hash-production-price .hash-component-section p, .hash-strength p {
+.hash-psycological-issues .hash-component-section-wrapper {
+	padding-top: 0;
+	padding-bottom: 40px;
+}
+.hash-psycological-issues .hash-psycological-issues-first-section.hash-component-section-wrapper {
+	padding-top: 12vw;
+	padding-bottom: 0px;
+}
+.hash-production-price .hash-component-section p {
 	text-align: center;
 	color: #53ad31;
+}
+.hash-strength p {
+	text-align: center;
+	color: #000;
 }
 .hash-strength p, .hash-psycological-issues p {
 	max-width: 600px;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-family: gibsonRegular;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .hash-typology, .hash-earnings {
@@ -225,6 +242,7 @@ body {
 
 .hash-earnings .hash-component-section img {
 	width: auto;
+	max-width: 100%;
 }
 p.disclaimer {
 	padding: 20px 10px 40px;
@@ -419,6 +437,18 @@ p.disclaimer {
 	font-family: gibsonRegular;
 	font-size: 16px;
 	text-align: center;
+}
+
+/* CREDITS */
+.hash-credits {
+	margin: 0 auto;
+	max-width: 600px;
+}
+.hash-credits p {
+	font-family: gibsonRegular;
+	font-size: 16px;
+	text-align: center;
+
 }
 
 
