@@ -3,16 +3,21 @@
 
 
 export default class Video {
-    constructor(el) {
+    constructor(el, pauseAll) {
         console.log()
         this.el = el;
+        this.pauseAll = pauseAll;
         this.build(el);
     }
+    pause() {
+        this.video.pause();
+        this.video.currentTime = 0;
+        this.play.classList.remove('video-component-button-playing');
 
+    }
     build(el) {
         this.video = document.createElement('video');
         const mp4Src = document.createElement('source');
-        console.log(el.dataset)
         mp4Src.src = el.dataset.videoFile;
         mp4Src.type = "video/mp4";
 
@@ -33,6 +38,7 @@ export default class Video {
         this.play.classList.add('video-component-button')
         this.play.addEventListener('click', (e) => {
             e.preventDefault();
+            this.pauseAll();
             this.play.classList.add('video-component-button-playing');
             this.video.play();
         })

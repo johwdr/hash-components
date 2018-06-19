@@ -47,14 +47,21 @@ class Weedipedia {
 
         new  Parallax(this.intersector);
 
+        // Done this way to keep lexical this
+        this.pauseAll = () => {
+            for(let n=0; n<this.videos.length; n++) {
+                this.videos[n].pause();
+            }
+        }
 
         this.videosEls = document.querySelectorAll('[data-hash-video]');
         for(let n=0; n<this.videosEls.length; n++) {
 
-            const component = new Video(this.videosEls[n]);
+            const component = new Video(this.videosEls[n], this.pauseAll);
             this.videos.push(component);
 
         }
+
         const slider = new SurveySlider();
 
         this.boolEls = document.querySelectorAll('[data-question-bool]');
@@ -75,7 +82,9 @@ class Weedipedia {
             this.pies.push(component);
 
         }
+
     }
+
 
 }
 

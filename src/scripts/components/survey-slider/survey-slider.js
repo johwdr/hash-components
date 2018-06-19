@@ -14,7 +14,7 @@ export default class SurveySlider{
         let wrappers = selectAll('[data-survey-slider]:not(.initialised)');
 
         for (var i = 0; i < wrappers.length; ++i) {
-            console.log('d', i);
+            //console.log('d', i);
             const wrapper = wrappers[i];
 
             wrapper.classList.add('initialised');

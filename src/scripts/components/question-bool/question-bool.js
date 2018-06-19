@@ -30,7 +30,7 @@ export default class QuestionBool{
         }
     }
     pickAnswer(event) {
-        console.log(event);
+        //console.log(event);
         this.answerElement.classList.add('shown');
         this.wrapper.classList.add('hidden');
 
