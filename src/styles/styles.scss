@@ -65,6 +65,7 @@ body {
 	transition: opacity 1.5s;
 	z-index: 50;
 	line-height: 0.9;
+	padding: 0 40px;
 }
 .hash-component-inner-wrapper h2.small {
 	font-size: calc(10px + 4.5vw);
@@ -85,7 +86,7 @@ body {
 
 /* IMAGES */
 #hash-cost-image {
-	padding: 0px 15vw;
+	padding: 0px 15vw 40px;
 }
 
 
@@ -291,10 +292,11 @@ p.disclaimer {
 	p {
 		font-size: 18px;
 		font-family: gibsonRegular;
+		color: #fff;
 	}
 	.notes {
 		color: #fff;
-		font-size: 14px;
+		font-size: 18px;
 		font-family: gibsonLight;
 	}
 }
@@ -362,7 +364,11 @@ p.disclaimer {
 	animation-timing-function: ease-in-out;
 	animation-direction: alternate;
 	filter: blur(0.5px);
+	@media screen and (min-width: 768px) {
+		animation-name: blurdesk;
+	}
 }
+
 
 /* BOOL QUESTION  */
 [data-question-bool-question] {
@@ -373,7 +379,7 @@ p.disclaimer {
 }
 [data-question-bool] {
 
-	padding-top: 40px;
+	padding-top: 80px 0 80px;
 }
 [data-question-bool-answer] {
 	display: none;
@@ -478,12 +484,19 @@ p.disclaimer {
 @keyframes blur {
 	0% {
 		filter: blur(1px);
-  }
+    }
 	100% {
 		filter: blur(2px);
 	}
 }
-
+@keyframes blurdesk {
+	0% {
+		filter: blur(1px);
+    }
+	100% {
+		filter: blur(5px);
+	}
+}
 /* HACKS */
 .progress-statusbar {
 	display: none;
