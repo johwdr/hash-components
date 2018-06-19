@@ -134,12 +134,12 @@ body {
 	[data-survey-slider]  {
 		.dr-survey-slider-minmark {
 			position: absolute;
-			top: -18px;
+			top: -20px;
 			left: 0px;
 		}
 		.dr-survey-slider-maxmark {
 			position: absolute;
-			top: -18px;
+			top: -20px;
 			right: 0px;
 		}
 	}
@@ -246,6 +246,9 @@ body {
 .hash-earnings .hash-component-section img {
 	width: auto;
 	max-width: 100%;
+}
+p.source {
+	font-size: 18px;
 }
 p.disclaimer {
 	padding: 20px 10px 40px;
