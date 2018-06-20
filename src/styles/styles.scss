@@ -390,7 +390,12 @@ p.disclaimer {
 	margin: 0 auto;
 	padding-bottom: 40px;
 	padding-left: 20px;
-    padding-right: 20px;
+	padding-right: 20px;
+	color: #fff;
+	ul {
+		font-size: 22px;
+		line-height: 1;
+	}
 	p {
 		font-family: gibsonRegular;
 		font-size: 22px;
@@ -438,13 +443,6 @@ p.disclaimer {
 	  left: -10px;
 	}
 
-}
-[data-question-bool-answer] {
-	color: #fff;
-	ul {
-		font-size: 22px;
-		line-height: 1;
-	}
 }
 
 /* PIE */
