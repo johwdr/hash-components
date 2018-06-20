@@ -82,6 +82,15 @@ body {
 
 [data-hash-component] p {
 	font-size: 22px;
+	line-height: 1.1;
+}
+#hash-intro-earnings {
+	font-size: 22px;
+	font-family: gibsonRegular;
+	color: #fff;
+	text-align: center;
+	max-width: 680px;
+
 }
 
 /* IMAGES */
@@ -319,14 +328,20 @@ p.disclaimer {
 	.hash-typology {
 		.hash-component-section {
 			img {
-				max-width: 200px;
+				max-width: 300px;
 				width: 100%;
 				position: absolute;
 				z-index: -1;
 				right: 100%;
 			}
+			#hash-image-type-hash {
+				max-width: 250px;
+			}
 		}
 	}
+}
+#hash-image-type-hash {
+	max-width: 250px;
 }
 
 /* VIDEO */
