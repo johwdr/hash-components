@@ -170,7 +170,7 @@ body {
 	padding-bottom: 40px;
 }
 .hash-psycological-issues .hash-psycological-issues-first-section.hash-component-section-wrapper {
-	padding-top: 12vw;
+	padding-top: calc(14vw + 50px);
 	padding-bottom: 0px;
 }
 .hash-production-price .hash-component-section p {
@@ -250,6 +250,7 @@ body {
 }
 p.source {
 	font-size: 18px;
+	padding: 30px 10px 10px;
 }
 p.disclaimer {
 	padding: 20px 10px 40px;
