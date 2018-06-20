@@ -142,8 +142,8 @@
     [disabled].noUi-target {
 
       .noUi-handle {
-        background: #345b1d;
-        border: #345b1d solid 4px;
+        background: #56a331;
+        border: #56a331 solid 4px;
         animation-name: none;
         box-shadow: none;
         &:before, &:after {
@@ -172,7 +172,7 @@
       min-height: 20px;
       white-space: nowrap;
       .result-answer {
-        color: #345b1d;
+        color: #56a331;
         opacity:0;
         position: absolute;
         top:12px;
@@ -283,9 +283,5 @@
       color:#fff;
       text-align: center;
       margin: 10px auto;
-      font-size: 15px;
-      .source{
-        font-family: gibsonBold;
-      }
     }
   }
