@@ -250,7 +250,7 @@ body {
 }
 p.source {
 	font-size: 18px;
-	padding: 30px 40px 10px;
+	padding: 30px 0px 10px;
 }
 p.disclaimer {
 	padding: 20px 10px 40px;
@@ -437,7 +437,15 @@ p.disclaimer {
 	  top: -20px;
 	  left: -10px;
 	}
-  }
+
+}
+[data-question-bool-answer] {
+	color: #fff;
+	ul {
+		font-size: 22px;
+		line-height: 1;
+	}
+}
 
 /* PIE */
 [data-hash-pie] svg {
