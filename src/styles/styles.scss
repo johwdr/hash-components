@@ -118,6 +118,12 @@ body {
 	height: auto;
 	vertical-align:top;
 }
+.hash-credits .flex-component {
+	max-width: 680px;
+	margin: 0 auto;
+	box-sizing: content-box;
+}
+
 .flex-component .hash-component-outer-wrapper .hash-component-inner-wrapper {
 	display: flex;
 }
