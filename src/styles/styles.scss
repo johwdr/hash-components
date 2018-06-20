@@ -484,6 +484,7 @@ p.disclaimer {
 .hash-credits {
 	margin: 0 auto;
 	position: relative;
+	overflow: hidden;
 }
 .hash-credits p {
 	font-family: gibsonRegular;
@@ -505,11 +506,13 @@ p.disclaimer {
 }
 .hash-credits video {
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	object-fit: cover;
-	z-index: 0;
+    z-index: 0;
+    top: 0px;
+    left: 0px; /* fixed to left. Replace it by right if you want.*/
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
 }
 .hash-credits .flex-component-wrapper {
 	min-height: auto;
