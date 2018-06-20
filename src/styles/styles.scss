@@ -66,6 +66,7 @@ body {
 	z-index: 50;
 	line-height: 0.9;
 	padding: 0 40px;
+	//transform: translateY(6vh);
 }
 .hash-component-inner-wrapper h2.small {
 	font-size: calc(10px + 4.5vw);
@@ -74,7 +75,8 @@ body {
 
  .hash-component-inner-wrapper h2.intersecting {
 	opacity: 1;
-	transition: opacity 1.5s, transform 0.3s;
+
+	transition: opacity 1.5s, transform 0.5s;
 }
 .hash-component-inner-wrapper {
 	color: #5dce38;

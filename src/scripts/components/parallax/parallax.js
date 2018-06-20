@@ -8,12 +8,12 @@ export default class Parallax {
         setInterval(() => {
             for (let n=0; n<intersections.intersectingEls.length;n++){
                 const el = intersections.intersectingEls[n];
-                const top = el.getBoundingClientRect().top - (window.innerWidth * 0.15);;
+                const top = el.getBoundingClientRect().top;
 
                 //const factor = Math.round(window.innerHeight/ top)
-                const factor = Math.round((top *0.02));
+                const factor = (top * 0.005).toFixed(2);
                 //console.log(factor);
-                if (factor > 0 && factor < 100) {
+                if (factor > 0) {
                     window.requestAnimationFrame(() => {
                         el.style.transform = 'translateY(' + factor +'vh)';
                     })
