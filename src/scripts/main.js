@@ -9,7 +9,7 @@ import AnimatedTypography from './components/animated-typography/animated-typogr
 import Video from './components/video/video';
 import HashComponent from './components/hash-component/hash-component';
 import IntersectionClass from './components/intersection-class/intersection-class';
-import Parallax from './components/parallax/parallax';
+//import Parallax from './components/parallax/parallax';
 import SurveySlider from './components/survey-slider/survey-slider';
 import QuestionBool from './components/question-bool/question-bool';
 import SimplePie from './components/simple-pie/simple-pie';
@@ -38,14 +38,6 @@ class Weedipedia {
         }
 
         this.intersector = new IntersectionClass('[data-hash-component]');
-
-        this.headLines = document.querySelectorAll('[data-hash-component] h2');
-        for (let n=0; n < this.headLines.length;  n++) {
-            const headline =  this.headLines[n];
-            headline.style.transform = 'translateY(10vw)';
-        }
-
-        new  Parallax(this.intersector);
 
         // Done this way to keep lexical this
         this.pauseAll = () => {

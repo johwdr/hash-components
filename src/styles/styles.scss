@@ -57,7 +57,7 @@ body {
 	text-align: center;
 	margin-top: 0px;
 	position: absolute;
-	top: calc(-2.75vw - 10px);
+	top: -2.5vw;
 	left: 0;
 	right: 0;
 	color: inherit;
@@ -66,17 +66,19 @@ body {
 	z-index: 50;
 	line-height: 0.9;
 	padding: 0 40px;
-	//transform: translateY(6vh);
+	transform: scale3d(0.9, 0.9, 0.9);
 }
 .hash-component-inner-wrapper h2.small {
 	font-size: calc(10px + 4.5vw);
-	top: calc(-3.25vw - 10px);
+	//top: calc(-3.25vw - 10px);
 }
 
  .hash-component-inner-wrapper h2.intersecting {
 	opacity: 1;
-
-	transition: opacity 1.5s, transform 0.5s;
+	transform: scale3d(1, 1, 1);
+	//animation: enter 1.5s  ease-out;
+	//transition: opacity 1.5s, transform 1.5s cubic-bezier(0,2,1,0.5);
+	transition: opacity 1.5s, transform 10.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);;
 }
 .hash-component-inner-wrapper {
 	color: #5dce38;
@@ -527,6 +529,17 @@ p.disclaimer {
     }
 	100% {
 		filter: blur(5px);
+	}
+}
+@keyframes enter {
+	0% {
+		transform: scale3d(0.9,0.9,0.9)
+	}
+	35% {
+		transform: scale3d(1.1,1.1,1.1)
+	}
+	100% {
+		transform: scale3d(1,1,1)
 	}
 }
 /* HACKS */
