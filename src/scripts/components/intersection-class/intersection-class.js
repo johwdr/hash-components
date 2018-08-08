@@ -1,6 +1,6 @@
 'use strict';
 
-
+require('intersection-observer');
 
 
 
@@ -19,10 +19,9 @@ export default class IntersectionClass {
         }, options);
 
 
-
-        this.els.forEach(element => {
-            observer.observe(element);
-        });
+        for (let n = 0; n< this.els.length; n++) {
+            observer.observe(this.els[n]);
+        }
     }
 
 
