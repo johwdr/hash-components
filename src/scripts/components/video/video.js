@@ -18,6 +18,9 @@ export default class Video {
     build(el) {
         this.video = document.createElement('video');
         const mp4Src = document.createElement('source');
+        if (el.dataset.posterFile) {
+            this.video.setAttribute('poster', el.dataset.posterFile);
+        }
         mp4Src.src = el.dataset.videoFile;
         mp4Src.type = "video/mp4";
 
