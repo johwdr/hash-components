@@ -219,7 +219,9 @@ body {
 .hash-strength .hash-component-section-wrapper {
 	padding-bottom: 40px;
 }
-
+.hash-component-section-wrapper.hash-earnings {
+	padding-top: 0;
+}
 .hash-typology, .hash-earnings {
 	.hash-component-section {
 		width: 100%;
@@ -430,8 +432,7 @@ p.disclaimer {
 	display: none;
 }
 [data-question-bool] {
-
-	padding: 10px 0px 80px;
+	padding: 0px 0px 120px;
 }
 [data-question-bool-answer] {
 	display: none;
