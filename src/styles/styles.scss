@@ -68,6 +68,7 @@ body {
 	padding: 0 40px;
 	transform: scale3d(0.9, 0.9, 0.9);
 }
+.hash-component-graph .hash-component-inner-wrapper h2,
 .hash-component-video .hash-component-inner-wrapper h2 {
 	position: absolute;
 }
@@ -137,7 +138,7 @@ body {
 	}
 }
 .survey-wrapper {
-	padding-top: 15vw;
+	padding-top: 0;
 	p {
 		text-align: center;
 		color: inherit;
@@ -167,7 +168,7 @@ body {
 .hash-component-section-wrapper.hash-typology {
 	display: flex;
 	flex-direction: column;
-	padding-top: 12vw;
+	padding-top: 0;
 	padding-bottom: 5vw;
 	.hash-component-section {
 		color: #fff;
@@ -188,15 +189,19 @@ body {
 	padding-bottom: 40px;
 }
 .hash-psycological-issues .hash-psycological-issues-first-section.hash-component-section-wrapper {
-	padding-top: calc(14vw + 50px);
+	padding-top: 0px;
 	padding-bottom: 0px;
+}
+.hash-production-price.hash-component-section-wrapper {
+	padding-top: 0px;
 }
 .hash-production-price .hash-component-section p {
 	text-align: center;
 	color: #53ad31;
 	max-width: 600px;
     margin: 0 auto;
-    width: 100%;
+	width: 100%;
+	padding: 0 20px;
 }
 .hash-strength p {
 	text-align: center;
@@ -301,7 +306,7 @@ p.disclaimer {
 
 .allowed-countries {
 	text-align: center;
-	padding-top: 10vw;
+	padding-top: 0;
 	padding-bottom: 40px;
 	h5 {
 		color: #fff;
@@ -426,11 +431,11 @@ p.disclaimer {
 }
 [data-question-bool] {
 
-	padding: 80px 0px;
+	padding: 10px 0px 80px;
 }
 [data-question-bool-answer] {
 	display: none;
-	padding-top: 7vw;
+	padding-top: 0;
 	max-width: 600px;
 	margin: 0 auto;
 	padding-bottom: 40px;
