@@ -89,17 +89,28 @@ body {
 }
 
 [data-hash-component] p {
-	font-size: 22px;
+	font-size: 18px;
 	line-height: 1.1;
 }
+@media screen and (min-width: 768px) {
+	[data-hash-component] p {
+		font-size: 22px;
+	}
+}
+
 #hash-intro-earnings {
-	font-size: 22px;
+	font-size: 18px;
 	font-family: gibsonRegular;
 	color: #fff;
 	text-align: center;
 	max-width: 680px;
 	margin: 0px auto;
     padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+	#hash-intro-earnings {
+		font-size: 22px;
+	}
 }
 
 /* IMAGES */
